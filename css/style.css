@@ -53,3 +53,14 @@ textarea{
     border-bottom: 1px solid cornsilk;
     height: 45px;
 }
+
+.form-header p{
+    color: blue;
+    border-bottom: 2px solid cadetblue;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    list-style: 45px;
+}
