@@ -10,14 +10,14 @@
     <header class="cabecalho">
         <h3>Cadastre seu veículo para vender mais rápido</h3>
     </header>
-    <div>
-        <div>
+    <div class="form-container">
+        <div class="form-header">
             <p>Formulário</p>
         </div>
         <div>
-            <h1>Venda fácil seu carro </h1>
+            <h1 class="titulo-form">Venda fácil seu carro </h1>
             <p>Descreva as características dos deu carro e marque os opcionais que ele possui</p>
-            <form>
+            <form onsubmit="salvarCarros(event)">
                 <div>
                     <label for="title">Título do Anúncio <span>*</span></label>
                     <input type="text" name="title" id="title" placeholder="Um título para anuciar seu carro">
