@@ -42,7 +42,7 @@ textarea{
 }
 
 .form-container {
-    background-color: mediumvioletred;
+    background-color: rgb(221, 220, 205);
     width: 60%;
     margin: 0 auto;
     position: relative;
@@ -51,4 +51,5 @@ textarea{
 
 .form-header{
     border-bottom: 1px solid cornsilk;
+    height: 45px;
 }
