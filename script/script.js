@@ -6,5 +6,30 @@ function salvarCarros(event){
     let marca = document.getElementById('marca').value;
     let modelo = document.getElementById('modelo').value;
 
-    
+    let cambioSelecionado = document.querySelector('input[name="marcha"]:checked');
+
+    let cambio = cambioSelecionado ? cambioSelecionado.id : "Não informado";
+
+        let carro = {
+        titulo,
+        preco,
+        marca,
+        modelo, 
+        cambio
+    };
+
+    let carros = JSON.parse(localStorage.getItem("carros")) || [];
+    carros.push(carro);
+    localStorage.setItem("carros", JSON.stringify(carros));
+
+    adicionarNaTela(carro);
+
+    document.querySelector("form").reset();
+}
+
+function adicionarNaTela(carro) {
+    let lista = document.getElementById('listarCarros');
+    let card = document.createElement('div');
+    card.classList.add('card');
+
 }
